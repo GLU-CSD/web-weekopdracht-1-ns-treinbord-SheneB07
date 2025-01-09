@@ -22,12 +22,12 @@
     border: 2px solid #000;
     
 
-    display: grid;
-    grid-template-areas: "tijd tijd treinsoort logo logo"
-                        "plaatsvanbestemming plaatsvanbestemming plaatsvanbestemming plaatsvanbestemming plaatsvanbestemming"
-                         "via via via via via"
-                         "treinlengte treinlengte treinlengte treinlengte treinlengte"
-                         "volgende volgende volgende volgende volgende";
+    /* display: grid;
+    grid-template-areas: "tijd treinsoort logo logo"
+                         "plaatsvanbestemming plaatsvanbestemming plaatsvanbestemming plaatsvanbestemming"
+                         "via via via via"
+                         "treinlengte treinlengte treinlengte treinlengte"
+                         "volgende volgende volgende volgende"; */
 }
 
 #right{
@@ -37,6 +37,47 @@
     border: 2px solid #000;
 }
 
+#wittevierkantrechts {
+    width: 96px;
+    height: 96px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    position:relative;
+  }
+  
+  #blauwvierkantrechts {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 0, 106);
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  
+  #wit_vierkant_spoor{
+      color: rgb(0, 0, 106);
+      font-size:12px;
+      position:absolute;
+      top:6px;
+      left:27px;
+  }
+  #wit_vierkant_18{
+      color: rgb(0, 0, 106);
+      font-size:50px;
+      font-weight: bold;
+      position:absolute;
+      top:22px;
+      left:24px;
+  }
+  #wit_vierkant_b{
+      color: rgb(0, 0, 106);
+      font-size:20px;
+      position:absolute;
+      top:30px;
+      left:80px;
+  }
+
 #box{
     width: 300px;
       height: 200px;
@@ -44,46 +85,74 @@
       border: 2px solid black;
 }
 
+#witvierkantmiddel{
+    width: 500px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 0px;
+    margin-top: 10px;
+    
+}
 
 #tijd{
-    background-color: red;
-    grid-area: tijd;
-    font-size: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 106);
+      font-size:30px;
+      position:absolute;
+      top:60px;
+      left:300px;
     
 }
 
 #treinsoort{
-    background-color: chartreuse;
-    grid-area: treinsoort;
-    text-align: end;
-    font-size: 30px;
-    height: 37px
+    background: white;
+    color: rgb(0, 0, 106);
+      font-size:30px;
+      position:absolute;
+      top:60px;
+      left:600px;
+    
 }
 
 #bestemming{
-    background-color: yellow;
-    grid-area: plaatsvanbestemming;
+    background-color: white;
+    color: rgb(0, 0, 106);
+      font-size:38px;
+      position:absolute;
+      top:95px;
+      left:300px;
 }
 
 #via{
-    background-color: blue;
-    grid-area: via;
+    background-color: white;
+    color: rgb(0, 0, 106);
+      font-size:17px;
+      position:absolute;
+      top:150px;
+      left: 300px;
 }
 
 #treinlengte{
-    background-color: blueviolet;
-    grid-area: treinlengte;
+    background-color: white;
+    color: rgb(0, 0, 106);
+      font-size:20px;
+      position:absolute;
+      top:50px;
+      left:80px;
 }
 
 #volgende{
-    background-color: cadetblue;
-    grid-area: volgende;
+    background-color: white;
+    color: rgb(0, 0, 106);
+      font-size:20px;
+      position:absolute;
+      top:30px;
+      left:80px;
 }
 
-#logo{
+/* #logo{
     grid-area: logo;
-}
-
-#blauwvakje{
     
-}
+} */
+
+
