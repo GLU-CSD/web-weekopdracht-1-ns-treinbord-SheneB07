@@ -1,4 +1,4 @@
-#container{
+#container {
     width: 936px;
     display: flex;
     margin: 0 auto;
@@ -6,7 +6,7 @@
     border: 2px solid #000;
 }
 
-#left{
+#left {
     width: 240px;
     background-color: #f2f2f2;
     height: 335px;
@@ -16,24 +16,16 @@
 #middle {
     width: 568px;
     height: 339px;
-    background-color: rgb(0, 0, 106);
+    background-color: rgb(0, 82, 204);
     padding: 35px;
     box-sizing: border-box;
     border: 2px solid #000;
-    
-
-    /* display: grid;
-    grid-template-areas: "tijd treinsoort logo logo"
-                         "plaatsvanbestemming plaatsvanbestemming plaatsvanbestemming plaatsvanbestemming"
-                         "via via via via"
-                         "treinlengte treinlengte treinlengte treinlengte"
-                         "volgende volgende volgende volgende"; */
 }
 
-#right{
-    width:128px;
+#right {
+    width: 128px;
     height: 335px;
-    background-color: rgb(0, 0, 106);
+    background-color: rgb(0, 82, 204);
     border: 2px solid #000;
 }
 
@@ -43,116 +35,142 @@
     background-color: white;
     margin-left: 20px;
     margin-top: 20px;
-    position:relative;
-  }
-  
-  #blauwvierkantrechts {
-    width: 20px;
-    height: 20px;
-    background-color: rgb(0, 0, 106);
-    margin-left: 0px;
-    margin-top: 0px;
-  }
-
-  
-  #wit_vierkant_spoor{
-      color: rgb(0, 0, 106);
-      font-size:12px;
-      position:absolute;
-      top:6px;
-      left:27px;
-  }
-  #wit_vierkant_18{
-      color: rgb(0, 0, 106);
-      font-size:50px;
-      font-weight: bold;
-      position:absolute;
-      top:22px;
-      left:24px;
-  }
-  #wit_vierkant_b{
-      color: rgb(0, 0, 106);
-      font-size:20px;
-      position:absolute;
-      top:30px;
-      left:80px;
-  }
-
-#box{
-    width: 300px;
-      height: 200px;
-      padding: 20px;
-      border: 2px solid black;
+    position: relative;
 }
 
-#witvierkantmiddel{
+#blauwvierkantrechts {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 82, 204);
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+
+#wit_vierkant_spoor {
+    color: rgb(0, 82, 204);
+    font-size: 12px;
+    position: absolute;
+    top: 6px;
+    left: 27px;
+}
+
+#wit_vierkant_18 {
+    color: rgb(0, 82, 204);
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 22px;
+    left: 10px;
+}
+
+#wit_vierkant_b {
+    color: rgb(0, 82, 204);
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 30px;
+    left: 65px;
+}
+
+#box {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+#witvierkantmiddel {
     width: 500px;
     height: 250px;
     background-color: rgb(255, 255, 255);
-    margin-left: 0px;
-    margin-top: 10px;
-    
+    position: absolute;
+
 }
 
-#tijd{
+#blauwvierkantmiddel {
+    width: 500px;
+    height: 25px;
+    background-color: rgb(0, 0, 106);
+    position: absolute;
+    top: 225px;
+
+}
+
+
+#tijd {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 106);
-      font-size:30px;
-      position:absolute;
-      top:60px;
-      left:300px;
-    
+    position: absolute;
+    font-size: 38px;
+    top: 3px;
+    left: 10px;
+
 }
 
-#treinsoort{
+#treinsoort {
     background: white;
     color: rgb(0, 0, 106);
-      font-size:30px;
-      position:absolute;
-      top:60px;
-      left:600px;
+    font-size: 38px;
+    font-weight: bold;
+    position: absolute;
+    top: 3px;
+    left: 270px;
+
+}
+
+#bestemming {
+    background-color: white;
+    color: rgb(0, 0, 106);
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    top: 50px;
+    left: 10px;
+}
+
+#via {
+    background-color: white;
+    color: rgb(0, 0, 106);
+    font-size: 19px;
+    position: absolute;
+    left: 10px;
+    top: 100px;
+}
+
+
+#volgende {
+    
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 10px;
+    top: 228px;
+
+
+}
+
+#logo {
+    position: absolute;
+    left: 425px;
+    top: 10px;
+}
+
+#treinlengtefoto{
+    position: absolute;
+    left: 140px;
+    top: 195px;
+}
+
+.circle {
+    width: 200px;        /* Width of the circle */
+    height: 200px;       /* Height of the circle */
+    background-color: #ffffff; /* Background color */
+    border-radius: 50%;  /* Makes the shape circular */
+    margin: 20px;  
+    border: 10px;
+    outline: 3px solid #000;
     
 }
 
-#bestemming{
-    background-color: white;
-    color: rgb(0, 0, 106);
-      font-size:38px;
-      position:absolute;
-      top:95px;
-      left:300px;
-}
-
-#via{
-    background-color: white;
-    color: rgb(0, 0, 106);
-      font-size:17px;
-      position:absolute;
-      top:150px;
-      left: 300px;
-}
-
-#treinlengte{
-    background-color: white;
-    color: rgb(0, 0, 106);
-      font-size:20px;
-      position:absolute;
-      top:50px;
-      left:80px;
-}
-
-#volgende{
-    background-color: white;
-    color: rgb(0, 0, 106);
-      font-size:20px;
-      position:absolute;
-      top:30px;
-      left:80px;
-}
-
-/* #logo{
-    grid-area: logo;
-    
-} */
 
 

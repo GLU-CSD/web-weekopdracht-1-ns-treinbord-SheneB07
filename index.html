@@ -1,50 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weekopdracht - NS-Treinbord</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <div id="container">
         <div id="left">
-            
-            <span class="dot"></span>
 
-            <!-- <span style='font-size:100px;'>&#9711;</span> -->
+            <div class="clock" id="clock"></div>
+            <div class="circle">
+
+            </div>
+
 
             <!-- hier komt de klok -->
         </div>
         <div id="middle">
             <!-- Hier komt de reizigers info -->
-    <div id="witvierkantmiddel">
 
-        <div id="tijd">1 minuut</div>
-        <div id="treinsoort">Intercity</div>
-        <div id="bestemming">Heerlen</div>
-        <div id="via">via 's-Hertogenbosch, Eindhoven, Weert, Roermond en Sittard</div>
-        <div id="treinlengte">treinlengte</div>
-        <div id="volgende">Hierna/next: 08:54 IC Venlo</div>
-        <!-- <img src="assets/img/ns_logo.png" style="width:100px;height:50px;"> -->
-     </div>
-    </div>
-       
+            <div id="witvierkantmiddel">
+                <div id="blauwvierkantmiddel"></div>
+                <span id="tijd">1 minuut</span>
+                <span id="treinsoort">Intercity</span>
+                <span id="bestemming">Heerlen</span>
+                <span id="via">via 's-Hertogenbosch, Eindhoven, Weert, Roermond en Sittard</span>
+                <span id="volgende">Hierna/next: 08:54 IC Venlo</span>
+                <img src="assets/img/ns_logo.png" style="width:65px;height:30px"; id="logo">
+                <img src="assets/img/treinlengte.png" style="width:220px;height:30px"; id="treinlengtefoto">
+            </div>
         </div>
+
+
         <div id="right">
             <div id="wittevierkantrechts">
                 <div id="blauwvierkantrechts"></div>
-      
-                  <div id="wit_vierkant_spoor">spoor</div>
-                  <div id="wit_vierkant_18">18</div>
-                  <div id="wit_vierkant_b">b</div>
-            <!-- hier komt het spoor nummer -->
-             
-                
-             </div>
-        
+
+                <div id="wit_vierkant_spoor">spoor</div>
+                <div id="wit_vierkant_18">18</div>
+                <div id="wit_vierkant_b">b</div>
+                <!-- hier komt het spoor nummer -->
+
+
+            </div>
+
         </div>
-        
+
     </div>
 </body>
+
+<script>
+    function updateClock() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+
+        // Format time to always show two digits (e.g., 01, 09, etc.)
+        hours = hours < 10 ? '0' + hours : hours;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+
+        var timeString = hours + ':' + minutes + ':' + seconds;
+
+        // Display the time on the page
+        document.getElementById('clock').textContent = timeString;
+    }
+
+    // Update the clock every 1000 milliseconds (1 second)
+    setInterval(updateClock, 1000);
+
+    // Initial call to display time immediately
+    updateClock();
+</script>
+
 </html>
